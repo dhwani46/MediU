@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.mediu.Appointments">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Home"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border1">
+            <ImageButton
+                android:layout_width="50sp"
+                android:layout_height="60sp"
+                android:src="@drawable/ic_action_name"
+                android:paddingStart="10sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="0sp"
+                android:paddingEnd="0sp"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:onClick="home"/>
+            <TextView
+                android:id="@+id/myhealth"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:textColor="#000"
+                android:text="@string/documents"
+                android:textSize="28sp"
+                android:paddingTop="5sp"
+                android:layout_margin="5sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="80sp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="20sp"
+                android:src="@drawable/file" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="22sp"
+                android:textAlignment="center"
+                android:text="@string/nod" />
+
+            <Button
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:background="#08ad60"
+                android:padding="15sp"
+                android:text="@string/upload"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

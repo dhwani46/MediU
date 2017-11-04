@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.mediu.Appointments">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Home"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border1">
+
+            <ImageButton
+                android:layout_width="50sp"
+                android:layout_height="60sp"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:onClick="home"
+                android:paddingEnd="0sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="0sp"
+                android:paddingStart="10sp"
+                android:src="@drawable/ic_action_name" />
+
+            <TextView
+                android:id="@+id/myhealth"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="5sp"
+                android:paddingTop="5sp"
+                android:text="@string/lab"
+                android:textColor="#000"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="80sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:padding="20sp"
+                android:src="@drawable/flask" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="22sp"
+                android:text="@string/nolab"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
